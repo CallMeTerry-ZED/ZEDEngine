@@ -1,0 +1,76 @@
+#*
+# © 2025 ZED Interactive. All Rights Reserved.
+#/
+
+# --------------------------
+# CLion / JetBrains
+# --------------------------
+.idea/
+*.iml
+
+# --------------------------
+# CMake build folders & files
+# --------------------------
+cmake-build-debug/
+cmake-build-release/
+cmake-build-relwithdebinfo/
+cmake-build-minsizerel/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_testing/
+
+# --------------------------
+# Build output
+# --------------------------
+build/
+bin/
+out/
+dist/
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.pdb
+*.obj
+*.o
+
+# --------------------------
+# Other IDE / Editor configs
+# --------------------------
+.vscode/
+*.code-workspace
+*.sln
+*.vcxproj*
+.vs/
+
+# --------------------------
+# Temporary / Junk files
+# --------------------------
+*.log
+*.tmp
+*.ncb
+*.user
+*.db
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --------------------------
+# Documentation (generated)
+# --------------------------
+docs/
+*.tag
+Scripts/Load Docs Webserver.bat
+Scripts/Gen Docs & Load Webserver.bat
+
+# --------------------------
+# Confidential
+# --------------------------
+Confidential/
