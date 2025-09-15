@@ -8,7 +8,7 @@
 #define EVENT_H
 
 #include "ZEDCorePch.h"
-#include "ZEDCore.h"
+#include "ZEDCore/Core.h"
 #include "spdlog/fmt/bundled/format.h"
 
 namespace ZED
