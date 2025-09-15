@@ -12,7 +12,7 @@
 
 namespace ZED
 {
-    class ZEDENGINE_API KeyEvent : public Event
+    class KeyEvent : public Event
     {
     public:
         inline int GetKeyCode() const { return KeyCode; }
@@ -25,7 +25,7 @@ namespace ZED
         int KeyCode;
     };
 
-    class ZEDENGINE_API KeyPressedEvent : public KeyEvent
+    class KeyPressedEvent : public KeyEvent
     {
     public:
         KeyPressedEvent(int KeyCode, int RepeatCount) : KeyEvent(KeyCode), RepeatCount(RepeatCount) {}
@@ -44,7 +44,7 @@ namespace ZED
         int RepeatCount;
     };
 
-    class ZEDENGINE_API KeyReleasedEvent : public KeyEvent
+    class KeyReleasedEvent : public KeyEvent
     {
     public:
         KeyReleasedEvent(int KeyCode) : KeyEvent(KeyCode) {}
@@ -59,7 +59,7 @@ namespace ZED
         ZED_EVENT_CLASS_TYPE(KeyReleased)
     };
 
-    class ZEDENGINE_API KeyTypedEvent : public KeyEvent
+    class KeyTypedEvent : public KeyEvent
     {
     public:
         KeyTypedEvent(int KeyCode) : KeyEvent(KeyCode) {}

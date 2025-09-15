@@ -12,7 +12,7 @@
 
 namespace ZED
 {
-    class ZEDENGINE_API MouseMovedEvent : public Event
+    class MouseMovedEvent : public Event
     {
     public:
         MouseMovedEvent(float x, float y) : MouseX(x), MouseY(y) {}
@@ -34,7 +34,7 @@ namespace ZED
         float MouseX, MouseY;
     };
 
-    class ZEDENGINE_API MouseScrolledEvent : public Event
+    class MouseScrolledEvent : public Event
     {
     public:
         MouseScrolledEvent(float xOffSet, float yOffSet) : XOffset(xOffSet), YOffset(yOffSet) {}
@@ -56,7 +56,7 @@ namespace ZED
         float XOffset, YOffset;
     };
 
-    class ZEDENGINE_API MouseButtonEvent : public Event
+    class MouseButtonEvent : public Event
     {
     public:
         inline int GetMouseButton() const { return MButton; }
@@ -68,7 +68,7 @@ namespace ZED
         int MButton;
     };
 
-    class ZEDENGINE_API MouseButtonPressedEvent : public MouseButtonEvent
+    class MouseButtonPressedEvent : public MouseButtonEvent
     {
     public:
         MouseButtonPressedEvent(int button) : MouseButtonEvent(button) {}
@@ -83,7 +83,7 @@ namespace ZED
         ZED_EVENT_CLASS_TYPE(MouseButtonPressed)
     };
 
-    class ZEDENGINE_API MouseButtonReleasedEvent : public MouseButtonEvent
+    class MouseButtonReleasedEvent : public MouseButtonEvent
     {
     public:
         MouseButtonReleasedEvent(int button) : MouseButtonEvent(button) {}

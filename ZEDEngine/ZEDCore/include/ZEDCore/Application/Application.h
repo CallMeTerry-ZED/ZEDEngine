@@ -8,8 +8,8 @@
 #define APPLICATION_H
 
 #include "ZEDCorePch.h"
-#include "ZedCore/Core.h"
-#include "ZedCore/Layer/LayerStack.h"
+#include "ZEDCore/Core.h"
+#include "ZEDCore/Layer/LayerStack.h"
 #include "ZEDCore/Event/Event.h"
 #include "ZEDCore/Event/ApplicationEvent.h"
 

@@ -17,6 +17,6 @@
 #include "ZEDCore/Log/Log.h"
 
 //////////ZEDEngine MAIN Entry Point///////////////////
-#include "ZedCore/EntryPoint.h"
+#include "ZEDCore/EntryPoint.h"
 
 #endif //ZEDCORE_H

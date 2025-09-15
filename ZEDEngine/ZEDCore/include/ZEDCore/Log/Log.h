@@ -8,7 +8,7 @@
 #define LOG_H
 
 #include "ZEDCorePch.h"
-#include "ZedCore/Core.h"
+#include "ZEDCore/Core.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
 
