@@ -70,7 +70,8 @@ namespace ZED
         {
             if (Event.GetEventType() == T::GetStaticType())
             {
-                Event.Handled = func(*(T*)Event);
+                Event.Handled = func(static_cast<T&>(Event));
+                //Event.Handled = func(*(T*)&Event); // C style cast lel
                 return true;
             }
             return false;

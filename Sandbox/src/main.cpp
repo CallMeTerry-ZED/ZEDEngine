@@ -9,7 +9,13 @@ class TestLayer : public ZED::Layer
 public:
     TestLayer() : Layer("Test Layer")
     {
-
+        ZED::Test::TestSteam();
+        ZED::Test::TestBullet();
+        ZED::Test::TestGLM();
+        ZED::Test::TestImGui();
+        ZED::Test::TestSDL();
+        ZED::Test::TestSpdlog();
+        ZED::Test::TestVulkan();
     }
 
     void OnUpdate() override
